@@ -97,8 +97,8 @@
 "
 " SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      sRGB        HSB
 " --------- ------- ---- -------  ----------- ---------- ----------- -----------
-" base03    #000000  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
-" base02    #002b36  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+" base03    #000000  8/4 brblack   16 #000000 15 -12 -12   0  43  54 193 100  21
+" base02    #002b36  0/4 black    234 #1c1c1c 20 -12 -12   7  54  66 192  90  26
 " base01    #586e75 10/7 brgreen  240 #4e4e4e 45 -07 -07  88 110 117 194  25  46
 " base00    #657b83 11/7 bryellow 241 #585858 50 -07 -07 101 123 131 195  23  51
 " base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
@@ -264,8 +264,8 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     " while in gui mode via "let g:solarized_degrade=1", though this is not
     " recommened and is for testing only.
     let s:vmode       = "gui"
-    let s:base03      = "#1c1c1c"
-    let s:base02      = "#262626"
+    let s:base03      = "#000000"
+    let s:base02      = "#1c1c1c"
     let s:base01      = "#4e4e4e"
     let s:base00      = "#585858"
     let s:base0       = "#808080"
@@ -282,8 +282,8 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     let s:green       = "#5f8700"
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:vmode       = "cterm"
-    let s:base03      = "8"
-    let s:base02      = "0"
+    let s:base03      = "0"
+    let s:base02      = "8"
     let s:base01      = "10"
     let s:base00      = "11"
     let s:base0       = "12"
@@ -300,8 +300,8 @@ elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:green       = "2"
 elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
-    let s:base03      = "234"
-    let s:base02      = "235"
+    let s:base03      = "16"
+    let s:base02      = "234"
     let s:base01      = "239"
     let s:base00      = "240"
     let s:base0       = "244"
@@ -335,8 +335,8 @@ else
 "   let s:blue        = "4"
 "   let s:cyan        = "6"
 "   let s:green       = "2"
-    let s:base03      = "DarkGray"      " 0*
-    let s:base02      = "Black"         " 0
+    let s:base03      = "Black"      " 0*
+    let s:base02      = "DarkGray"         " 0
     let s:base01      = "LightGreen"    " 2*
     let s:base00      = "LightYellow"   " 3*
     let s:base0       = "LightBlue"     " 4*
